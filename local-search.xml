@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>Location Of iOS Backup File On MacOS</title>
+    <link href="/2022/11/05/Location-Of-IOS-Backup-Files-On-MacOS/"/>
+    <url>/2022/11/05/Location-Of-IOS-Backup-Files-On-MacOS/</url>
+    
+    <content type="html"><![CDATA[<p>Record the backup process of iPhone on MacOS.</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">/Users/hyk/Library/Application Support/MobileSync/Backup<br></code></pre></td></tr></table></figure><p><img src="backuping.png" alt="Backup"></p><p><img src="getInfo.png" alt="Info Of File"></p><p><img src="terminal.png" alt="PWD On Terminal"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>Buckup</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>MacOS</tag>
+      
+      <tag>iOS</tag>
+      
+      <tag>Backup</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Installations Of Docker &amp; Oh My Zsh On MacOS</title>
     <link href="/2022/11/05/InstallationsOfDockerAndOhMyZshOnMacOS/"/>
     <url>/2022/11/05/InstallationsOfDockerAndOhMyZshOnMacOS/</url>
