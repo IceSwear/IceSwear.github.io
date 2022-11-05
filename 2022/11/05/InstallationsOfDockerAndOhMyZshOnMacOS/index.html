@@ -16,28 +16,26 @@
   <meta name="author" content="Spike Wong">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Some dudes may ask me how to build such a simple blog like this site with github domain. Here I am going to share the details step by step,and hope it is useful to someone. Sign Up Your Github Account">
+    <meta name="description" content="Installation Of DockerTo install docker, run the command as below. 12brew install --cask docker#then enjoy it     Installation of Oh My ZshMirror source of gitee 1sh -c &quot;$(curl -fsSL https:&#x2F;&#x2F;gite">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How To Build This Blog On Github">
-<meta property="og:url" content="https://iceswear.github.io/2022/11/04/HowToBuildThisBlogOnGithub/index.html">
+<meta property="og:title" content="Installations Of Docker &amp; Oh My Zsh On MacOS">
+<meta property="og:url" content="https://iceswear.github.io/2022/11/05/InstallationsOfDockerAndOhMyZshOnMacOS/index.html">
 <meta property="og:site_name" content="IsEmpty">
-<meta property="og:description" content="Some dudes may ask me how to build such a simple blog like this site with github domain. Here I am going to share the details step by step,and hope it is useful to someone. Sign Up Your Github Account">
+<meta property="og:description" content="Installation Of DockerTo install docker, run the command as below. 12brew install --cask docker#then enjoy it     Installation of Oh My ZshMirror source of gitee 1sh -c &quot;$(curl -fsSL https:&#x2F;&#x2F;gite">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://iceswear.github.io/2022/11/04/HowToBuildThisBlogOnGithub/createRepository.png">
-<meta property="og:image" content="https://iceswear.github.io/2022/11/04/HowToBuildThisBlogOnGithub/renameAsFluid.png">
-<meta property="og:image" content="https://iceswear.github.io/2022/11/04/HowToBuildThisBlogOnGithub/pushPublicToGithub.png">
-<meta property="article:published_time" content="2022-11-04T15:08:47.000Z">
-<meta property="article:modified_time" content="2022-11-04T15:34:05.197Z">
+<meta property="og:image" content="https://iceswear.github.io/2022/11/05/InstallationsOfDockerAndOhMyZshOnMacOS/da0605d3-d675-4581-bea5-6cec0a44c943.png">
+<meta property="article:published_time" content="2022-11-05T06:30:44.000Z">
+<meta property="article:modified_time" content="2022-11-05T06:35:21.506Z">
 <meta property="article:author" content="Spike Wong">
-<meta property="article:tag" content="Hexo">
-<meta property="article:tag" content="Github">
-<meta property="article:tag" content="Node.js">
+<meta property="article:tag" content="MacOS">
+<meta property="article:tag" content="Installation">
+<meta property="article:tag" content="Docker">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://iceswear.github.io/2022/11/04/HowToBuildThisBlogOnGithub/createRepository.png">
+<meta name="twitter:image" content="https://iceswear.github.io/2022/11/05/InstallationsOfDockerAndOhMyZshOnMacOS/da0605d3-d675-4581-bea5-6cec0a44c943.png">
   
   
   
-  <title>How To Build This Blog On Github - IsEmpty</title>
+  <title>Installations Of Docker &amp; Oh My Zsh On MacOS - IsEmpty</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -219,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="How To Build This Blog On Github"></span>
+            <span id="subtitle" data-typed-text="Installations Of Docker &amp; Oh My Zsh On MacOS"></span>
           
         </div>
 
@@ -230,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-11-04 23:08" pubdate>
-          November 4, 2022 pm
+        <time datetime="2022-11-05 14:30" pubdate>
+          November 5, 2022 pm
         </time>
       </span>
     
@@ -242,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.4k words
+          1.5k words
         
       </span>
     
@@ -253,7 +251,7 @@
         
         
         
-          21 mins
+          13 mins
         
       </span>
     
@@ -299,100 +297,47 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">How To Build This Blog On Github</h1>
+            <h1 style="display: none">Installations Of Docker &amp; Oh My Zsh On MacOS</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Some dudes may ask me how to build such a simple blog like this site with github domain.</p>
-<p>Here I am going to share the details step by step,and hope it is useful to someone.</p>
-<h2 id="Sign-Up-Your-Github-Account"><a href="#Sign-Up-Your-Github-Account" class="headerlink" title="Sign Up Your Github Account"></a>Sign Up Your Github Account</h2><p>Go to <a target="_blank" rel="noopener" href="https://github.com/">Github</a> to register your own account.It should be easiest thing to do I believe!</p>
-<hr>
-<h2 id="Create-A-Repository"><a href="#Create-A-Repository" class="headerlink" title="Create A Repository"></a>Create A Repository</h2><p>Create a repository named as  <strong>userName</strong><strong>.github.io.</strong> Noted that <strong>userName</strong> <strong>must</strong> be same as your user name of Github.</p>
-<p><img src="createRepository.png" srcset="/img/loading.gif" lazyload alt="Create A Repository"></p>
-<hr>
-<h2 id="Install-Node-js-On-Your-Laptop"><a href="#Install-Node-js-On-Your-Laptop" class="headerlink" title="Install Node.js On Your Laptop"></a>Install Node.js On Your Laptop</h2><p>It may be different for various system.Here I just demonstrate how to install it on my Macbook Air.You can just click <a href="https://iceswear.github.io/2022/11/04/InstallationOfNode-JSOnMacOS/">Installation Of Node.js On MacOS</a> for reference.</p>
-<hr>
-<h2 id="Installation-Of-Hexo"><a href="#Installation-Of-Hexo" class="headerlink" title="Installation Of Hexo"></a>Installation Of Hexo</h2><p>Follow the command to install hexo</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm install -g hexo-cli<br></code></pre></td></tr></table></figure>
+                <h2 id="Installation-Of-Docker"><a href="#Installation-Of-Docker" class="headerlink" title="Installation Of Docker"></a>Installation Of Docker</h2><p>To install docker, run the command as below.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">brew install --cask docker<br><span class="hljs-meta prompt_">#</span><span class="language-bash"><span class="hljs-keyword">then</span> enjoy it</span><br></code></pre></td></tr></table></figure>
 
-<p>See version of hexo</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo -v<br></code></pre></td></tr></table></figure>
 
-<p>After installation is finished, initilize a blog module  hexo-blog .</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo init hexo-blog<br></code></pre></td></tr></table></figure>
-
-<p>Then enter the module to run npm</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell">cd hexo-blog<br><span class="hljs-meta prompt_">#</span><span class="language-bash"><span class="hljs-keyword">then</span> build npm</span><br>npm install<br></code></pre></td></tr></table></figure>
-
-<p>Now, you can start the blog at your local enviroment and just visit <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo g<br>hexo server<br></code></pre></td></tr></table></figure>
 
 <hr>
-<h2 id="Change-A-Better-Theme-Fuild"><a href="#Change-A-Better-Theme-Fuild" class="headerlink" title="Change A Better Theme-Fuild"></a>Change A Better Theme-Fuild</h2><p>As the original theme of Hexo is too simple, we could use a better theme.Here I will choose <strong>Fuild.</strong></p>
-<ol>
-<li>Download the latest package from <a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid/releases">https://github.com/fluid-dev/hexo-theme-fluid/releases</a> .Unzip the package at the root of theme and rename file as fluid.</li>
+<h2 id="Installation-of-Oh-My-Zsh"><a href="#Installation-of-Oh-My-Zsh" class="headerlink" title="Installation of Oh My Zsh"></a>Installation of Oh My Zsh</h2><p>Mirror source of gitee</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sh -c &quot;$(curl -fsSL https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh)&quot;<br></code></pre></td></tr></table></figure>
+
+<p>Source of Github</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">sh -c &quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)<span class="hljs-string">&quot;</span><br></code></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h2 id="Configuration-Of-Auto-Completion"><a href="#Configuration-Of-Auto-Completion" class="headerlink" title="Configuration Of Auto-Completion"></a>Configuration Of Auto-Completion</h2><ol>
+<li>Create a dictory for Auto-Completion and pull the files from remote server.</li>
 </ol>
-<p><img src="renameAsFluid.png" srcset="/img/loading.gif" lazyload alt="Rename As Fluid"></p>
-<ol start="2">
-<li>Configure _config.yml of hexo-blog to set theme and language.</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell">theme: fluid  # appointed theme<br>language: zh-CN  <br><span class="hljs-meta prompt_"># </span><span class="language-bash">use zh-CN <span class="hljs-keyword">if</span> you would like to use Chinese,or use en as default language</span><br></code></pre></td></tr></table></figure>
-
-<p><em>For more configurations, you can visit</em> <a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid/blob/master/README_en.md"><em>Fluid</em></a> <em>to learn.</em></p>
-<hr>
-<h2 id="Push-On-Github-Pages"><a href="#Push-On-Github-Pages" class="headerlink" title="Push On Github Pages"></a>Push On Github Pages</h2><p><strong>Method 1</strong></p>
-<p>Install hexo-deployer-git</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure>
-
-<p>Modify  _config.yml of hexo and account of GitHub</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell">deploy:<br>  type: git<br>  repo: https://github.com/xxx/xxx.github.io.git<br>  branch: main<br>  token: ghp_3K*******************<br></code></pre></td></tr></table></figure>
-
-<p>Finally,depoly to Github</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo g -d<br></code></pre></td></tr></table></figure>
-
-<hr>
-<p><strong>Method 2</strong></p>
-<p>Directly push files of public to main branch of GitHub .</p>
-<p><img src="pushPublicToGithub.png" srcset="/img/loading.gif" lazyload alt="Push Public To Github"></p>
-<hr>
-<p><strong>Method 3</strong></p>
-<p>Publish blog to your own Linux server and use Nginx to proxy.</p>
-<ol>
-<li>Edit   _config.yml of hexo-blog to add this path—this path should be same as location /blog of Nginx .</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">root: /blog<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">create a dictory</span><br>mkdir -p ~/.zsh/completion<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">zsh-completions</span><br>git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">completions of docker</span><br>curl -L https://raw.staticdn.net/docker/compose/1.27.4/contrib/completion/zsh/_docker-compose &gt; ~/.zsh/completion/_docker-compose<br></code></pre></td></tr></table></figure>
 
 <ol start="2">
-<li>run packaging command at the root of hexo-blog ,the generated files will be saved into public  directory.</li>
+<li>Copy files of Docker.app to ~/.zsh/completion</li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo g<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">Copy Docker.app to  ~/.zsh/completion</span><br>cp /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion ~/.zsh/completion/_docker<br>cp /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion ~/.zsh/completion/_docker-compose<br>cp /Applications/Docker.app/Contents/Resources/etc/docker-machine.zsh-completion ~/.zsh/completion/_docker-machine<br><br><br>vim ~/.zshrc<br></code></pre></td></tr></table></figure>
 
 <ol start="3">
-<li>Copy these files to Linux server somewhere you would like to place.</li>
+<li>Put those below content into .zshrc file.</li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">Noted that it<span class="hljs-string">&#x27;s up to you to choose where to save</span></span><br><br>/opt/spike/fronted/hexo-blog<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">put those below into .zshrc</span><br>plugins=(git zsh-completions docker docker-compose)<br><br>fpath=(~/.zsh/completion $fpath)<br>autoload -Uz compinit &amp;&amp; compinit -i<br></code></pre></td></tr></table></figure>
 
+<p>Logs for reference.</p>
+<p><img src="da0605d3-d675-4581-bea5-6cec0a44c943.png" srcset="/img/loading.gif" lazyload alt="Logs Of Teminal"></p>
 <ol start="4">
-<li>Modify <strong>conf</strong> of Nginx .</li>
+<li>Reload ~/.zshrc to make it into effect.</li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">Noted that it may be different on your server</span><br>cd /usr/local/nginx/conf <br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">edit nginx.conf</span><br>vim nginx.conf  <br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">add this configuration on your server</span><br>location /blog &#123;<br>    alias  /opt/spike/fronted/hexo-blog;<br>    index  index.html index.htm;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>Restart Nginx .</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">cd /usr/local/nginx/sbin<br>./nginx -s reload<br></code></pre></td></tr></table></figure>
-
-<ol start="6">
-<li>Finally, you can visit your blog via  ip address of your server.</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">visit your blogs</span><br>http://xx.xx.xx.xx/blog/<br></code></pre></td></tr></table></figure>
-
-
-
-<hr>
-<h2 id="Blogs-Display"><a href="#Blogs-Display" class="headerlink" title="Blogs Display"></a>Blogs Display</h2><p>Well Done Man!!</p>
-<p>Just visit <a href="https://iceswear.github.io/">iceswear.github.io</a> to enjoy your own blogs~~</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">execute this</span><br>autoload -U compinit &amp;&amp; compinit<br><span class="hljs-meta prompt_">#</span><span class="language-bash"><span class="hljs-keyword">then</span> reload .zshrc</span><br>source ~/.zshrc<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -411,7 +356,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Front-End/" class="category-chain-item">Front-End</a>
+  <a href="/categories/DevTools/" class="category-chain-item">DevTools</a>
   
   
 
@@ -426,11 +371,11 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Hexo/">#Hexo</a>
+        <a href="/tags/MacOS/">#MacOS</a>
       
-        <a href="/tags/Github/">#Github</a>
+        <a href="/tags/Installation/">#Installation</a>
       
-        <a href="/tags/Node-js/">#Node.js</a>
+        <a href="/tags/Docker/">#Docker</a>
       
     </div>
   
@@ -442,8 +387,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>How To Build This Blog On Github</div>
-      <div>https://iceswear.github.io/2022/11/04/HowToBuildThisBlogOnGithub/</div>
+      <div>Installations Of Docker &amp; Oh My Zsh On MacOS</div>
+      <div>https://iceswear.github.io/2022/11/05/InstallationsOfDockerAndOhMyZshOnMacOS/</div>
     </div>
     <div class="license-meta">
       
@@ -455,7 +400,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>November 4, 2022</div>
+          <div>November 5, 2022</div>
         </div>
       
       
@@ -487,18 +432,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/11/05/InstallationsOfHomebrewMySQL&amp;RedisOnMacOS/" title="Installations Of Homebrew, MySQL &amp; Redis On MacOS">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Installations Of Homebrew, MySQL &amp; Redis On MacOS</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/11/04/InstallationOfNodejsOnMacOS/" title="Installation Of Node.js On MacOS">
-                        <span class="hidden-mobile">Installation Of Node.js On MacOS</span>
+                      <a href="/2022/11/05/InstallationsOfHomebrewMySQL&amp;RedisOnMacOS/" title="Installations Of Homebrew, MySQL &amp; Redis On MacOS">
+                        <span class="hidden-mobile">Installations Of Homebrew, MySQL &amp; Redis On MacOS</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>Installations Of Docker &amp; Oh My Zsh On MacOS</title>
+    <link href="/2022/11/05/InstallationsOfDockerAndOhMyZshOnMacOS/"/>
+    <url>/2022/11/05/InstallationsOfDockerAndOhMyZshOnMacOS/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Installation-Of-Docker"><a href="#Installation-Of-Docker" class="headerlink" title="Installation Of Docker"></a>Installation Of Docker</h2><p>To install docker, run the command as below.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">brew install --cask docker<br><span class="hljs-meta prompt_">#</span><span class="language-bash"><span class="hljs-keyword">then</span> enjoy it</span><br></code></pre></td></tr></table></figure><hr><h2 id="Installation-of-Oh-My-Zsh"><a href="#Installation-of-Oh-My-Zsh" class="headerlink" title="Installation of Oh My Zsh"></a>Installation of Oh My Zsh</h2><p>Mirror source of gitee</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sh -c &quot;$(curl -fsSL https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh)&quot;<br></code></pre></td></tr></table></figure><p>Source of Github</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">sh -c &quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)<span class="hljs-string">&quot;</span><br></code></pre></td></tr></table></figure><hr><h2 id="Configuration-Of-Auto-Completion"><a href="#Configuration-Of-Auto-Completion" class="headerlink" title="Configuration Of Auto-Completion"></a>Configuration Of Auto-Completion</h2><ol><li>Create a dictory for Auto-Completion and pull the files from remote server.</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">create a dictory</span><br>mkdir -p ~/.zsh/completion<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">zsh-completions</span><br>git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">completions of docker</span><br>curl -L https://raw.staticdn.net/docker/compose/1.27.4/contrib/completion/zsh/_docker-compose &gt; ~/.zsh/completion/_docker-compose<br></code></pre></td></tr></table></figure><ol start="2"><li>Copy files of Docker.app to ~/.zsh/completion</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">Copy Docker.app to  ~/.zsh/completion</span><br>cp /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion ~/.zsh/completion/_docker<br>cp /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion ~/.zsh/completion/_docker-compose<br>cp /Applications/Docker.app/Contents/Resources/etc/docker-machine.zsh-completion ~/.zsh/completion/_docker-machine<br><br><br>vim ~/.zshrc<br></code></pre></td></tr></table></figure><ol start="3"><li>Put those below content into .zshrc file.</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">put those below into .zshrc</span><br>plugins=(git zsh-completions docker docker-compose)<br><br>fpath=(~/.zsh/completion $fpath)<br>autoload -Uz compinit &amp;&amp; compinit -i<br></code></pre></td></tr></table></figure><p>Logs for reference.</p><p><img src="da0605d3-d675-4581-bea5-6cec0a44c943.png" alt="Logs Of Teminal"></p><ol start="4"><li>Reload ~/.zshrc to make it into effect.</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">execute this</span><br>autoload -U compinit &amp;&amp; compinit<br><span class="hljs-meta prompt_">#</span><span class="language-bash"><span class="hljs-keyword">then</span> reload .zshrc</span><br>source ~/.zshrc<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>DevTools</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>MacOS</tag>
+      
+      <tag>Installation</tag>
+      
+      <tag>Docker</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Installations Of Homebrew, MySQL &amp; Redis On MacOS</title>
     <link href="/2022/11/05/InstallationsOfHomebrewMySQL&amp;RedisOnMacOS/"/>
     <url>/2022/11/05/InstallationsOfHomebrewMySQL&amp;RedisOnMacOS/</url>
@@ -53,11 +82,11 @@
     
     <tags>
       
-      <tag>Node.js</tag>
-      
       <tag>Hexo</tag>
       
       <tag>Github</tag>
+      
+      <tag>Node.js</tag>
       
     </tags>
     
