@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>Installation Of Win11 With Parallels Destop 17 On MacOS</title>
+    <link href="/2022/11/06/Installation-Of-Win11-With-Parallels-Desktop-17-On-MacOS/"/>
+    <url>/2022/11/06/Installation-Of-Win11-With-Parallels-Desktop-17-On-MacOS/</url>
+    
+    <content type="html"><![CDATA[<p>Sometimes I need Windows system to do something necessary.I hate it but we don’t have other choices.Therefor, the ideal way to solve is installing PD on MacOS.</p><p>This is a record during I use PD17 to install Win 11 on my Macbook Air.Maybe sometimes I need to review and reinstall it in the future when it is expired.</p><h2 id="Download-packages-from-my-aDrive"><a href="#Download-packages-from-my-aDrive" class="headerlink" title="Download packages from my aDrive"></a>Download packages from my aDrive</h2><p>What we need are shown as below</p><ul><li>Parallels Desktop 17</li><li>Win11 </li><li>ac.bat (Actiate Windows)</li><li>PD Patner (Skip notification of PD trial alert)</li></ul><p><img src="1667732545598-16a50e78-fd02-40aa-8892-1b489686be5b.png" alt="aDrive"></p><p>Follow the tips of installation package step by step then we can finish.</p><h2 id="Solution-to-network-issues"><a href="#Solution-to-network-issues" class="headerlink" title="Solution to network issues"></a>Solution to network issues</h2><p>We oftentimes may meet the issues of network on  Parallels Destop.To solve it, you can follow below.</p><ol><li>Edit network.desktop.xml.</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">cd /Library/Preferences/Parallels<br><br>vim network.desktop.xml<br></code></pre></td></tr></table></figure><ol><li>Modified [-1] or [0] as [1] , then save it.(sometimes should be 0)</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">&lt;UseKextless&gt;1&lt;/UseKextless&gt;<br><br>#sometimes should be 0<br></code></pre></td></tr></table></figure><p><img src="1667734408693-734706c7-0847-4adf-9a33-9666b725ba75.png" alt="Path Of PD17"></p><p>Finally, we have gotten win11 on MacOS successfully!!</p><p><img src="1667734717888-e18d399d-d03b-4303-ba26-11d1bae4dc60.png" alt="Win11 On MacOS"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Win11</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>MacOS</tag>
+      
+      <tag>Installation</tag>
+      
+      <tag>Parallels Desktop</tag>
+      
+      <tag>Win11</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Location Of iOS Backup File On MacOS</title>
     <link href="/2022/11/05/Location-Of-iOS-Backup-File-On-MacOS/"/>
     <url>/2022/11/05/Location-Of-iOS-Backup-File-On-MacOS/</url>
