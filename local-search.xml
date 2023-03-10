@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>Quick Start A JEECG DEMO</title>
+    <link href="/2023/03/10/Quick_Start_A_JEECG_DEMO/"/>
+    <url>/2023/03/10/Quick_Start_A_JEECG_DEMO/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h1><p>Possible to get a opportunity to learn front-end in company, I receievd a primary demand from a professor.</p><p><img src="1678436943916-10377638-ff2b-4fd0-bf9b-5624459098c3.png" alt="img"></p><h2 id="Code-Source"><a href="#Code-Source" class="headerlink" title="Code Source"></a>Code Source</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">https://github.com/jeecgboot/jeecg-boot<br></code></pre></td></tr></table></figure><h2 id="BACKEND-PART"><a href="#BACKEND-PART" class="headerlink" title="BACKEND PART"></a>BACKEND PART</h2><p>Pull backend codes from github</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">git clone https://github.com/jeecgboot/jeecg-boot.git<br></code></pre></td></tr></table></figure><p>How To Start VIA IDEA followed by the document.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">http://doc.jeecg.com/2043874<br></code></pre></td></tr></table></figure><p>Initial DB</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">jeecg-boot/db/jeecgboot-mysql-5.7.sql<br></code></pre></td></tr></table></figure><p>Then execute SQL file to build the DB in your laptop.</p><p><img src="1678436196678-4df668fb-715a-4a37-a003-879ffd3a1292.png" alt="img"></p><p>Follow below path to update your local MySQL&amp;Redis</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">jeecg-module-system/jeecg-system-start/src/main/resources/application-dev.yml<br></code></pre></td></tr></table></figure><p>Finally, we can run back end.</p><h2 id="FRONT-END-PART（VUE3）"><a href="#FRONT-END-PART（VUE3）" class="headerlink" title="FRONT-END PART（VUE3）"></a>FRONT-END PART（VUE3）</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell">git clone https://github.com/jeecgboot/jeecgboot-vue3<br><br>npm install --force  //if necessary in case depencies conflict<br><br>npm run dev<br></code></pre></td></tr></table></figure><p>Install pmmp command through nmp</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm install -g pnpm<br><br>pnpm run<br><br>pnpm dev<br></code></pre></td></tr></table></figure><p>What is pnpm? And how to install pnpm</p><p><a href="https://juejin.cn/post/7124142007659790372">https://juejin.cn/post/7124142007659790372</a></p><h2 id="Trouble-Shooting"><a href="#Trouble-Shooting" class="headerlink" title="Trouble Shooting"></a>Trouble Shooting</h2><p>Depencies conflicts while using npm command to install</p><p><a href="https://blog.csdn.net/qq_36521981/article/details/124704628">https://blog.csdn.net/qq_36521981/article/details/124704628</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>MySQL</tag>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>MySQL - Execution Flow &amp; Architecture</title>
     <link href="/2022/11/22/MySQL-Execution-Flow-Architecture/"/>
     <url>/2022/11/22/MySQL-Execution-Flow-Architecture/</url>
